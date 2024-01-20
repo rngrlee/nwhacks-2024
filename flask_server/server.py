@@ -1,11 +1,9 @@
 from flask import Flask, request, jsonify
+from community import Community
 
 app = Flask(__name__)
 
 #PATH CLI: source /etc/profile``
-
-community = Community(1, "test")
-person = Person(1, "Ranger")
 
 '''
 Routes are endpoints or "locations" on our API 
@@ -16,7 +14,6 @@ def create_community():
     try:
         # Get the data from the request
         data = request.get_json()
-        communityID = data.get('communityID')
         name = data.get('name')
 
         if not communityID or not name:
@@ -45,7 +42,6 @@ Methods include:
 - PUT: Update a resource
 - DELETE: Delete a resource
 '''
-
 
 if __name__ == "__main__":
     app.run(debug=True)

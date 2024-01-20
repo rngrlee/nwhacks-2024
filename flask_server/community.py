@@ -1,9 +1,9 @@
 class Community:
 
-    def __init__(self, communityID, name, members):
+    def __init__(self, communityID, name):
         self.communityID = communityID #primary
         self.name = name
-        self.members = [] #list of integers that will be userID
+        #self.members = [] #list of integers that will be userID
 
     @property
     def getCommunityID(self):
