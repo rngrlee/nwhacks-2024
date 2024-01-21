@@ -1,14 +1,14 @@
-import './Styles.css';
-import './Profile.css';
+// import './Styles.css';
+// import './Profile.css';
 import Navbar from "../Navbar"
 
-const Profile = ({ picture, name, star }) => {
+const Profile = ({ name, star }) => {
 
     return (
         <>
             <h1 className="title">Profile</h1>
             <div className="horizontal-align">
-                <img src={picture} alt="Profile" className="profile-image" />
+                <img src='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' alt="Profile" className="profile-image" />
                 <div className='horizontal-child'>
                     <h4 className="profile-name">{name}</h4>
                     <button className='change-photo'>Change Photo</button> <br />

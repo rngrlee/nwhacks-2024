@@ -1,11 +1,37 @@
+/*For Everything*/
 * {
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
-}
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container { 
+    display: flex;
+    align-items: center; 
+  }
+  
+  .profile-image {
+    margin-right: 10%px;
+  }
 
+  .title{
+    font-family: Arial, sans-serif;
+    color: #FF9900;
+    position: relative;
+    margin-top: -50px;
+  }
+
+/*For Navbar*/
 .nav {
     background-color: #f2f2f2;
     color: black;
@@ -18,7 +44,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 2rem; */
     padding: 10px 0;
 }
 
@@ -45,4 +70,48 @@ body {
 
 .nav li:hover {
     background-color: #eaeaea;
+}
+
+/*For Profile*/
+.profile-image {
+    display: block;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.horizontal-align {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+
+.top-buttons {
+  width: 70px;
+  height: 70px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+  background-color: #fee0c3;
+  outline: none;
+  border: none;
+}
+
+.profile-name {
+  margin-bottom: 0px;
+}
+
+.change-photo {
+  border: none;
+  background: none;
+  margin: 0px 0px 0px 0px;
+  padding-left: 0px;
+  color: grey;
+}
+
+.bottom-buttons {
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  margin: 3px 0px 3px 0px;
 }
