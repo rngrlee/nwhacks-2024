@@ -8,9 +8,6 @@ export default function CalendarGfg() {
  
     return (
         <div>
-            <h1>What are you looking for?</h1>
-            <p>I need a...</p>
-            
             <Calendar
                 onChange={onChange}
                 value={value}
