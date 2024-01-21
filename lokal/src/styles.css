@@ -119,7 +119,7 @@ html, body {
 .bottom-buttons {
   outline: none;
   border: none;
-  background-color: ivory;
+  background-color: transparent;
   margin: 3px 0px 3px 0px;
 }
 
