@@ -11,14 +11,14 @@ const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payA
                     <p>{location} | {daysAgo} days ago</p>
                 </div>
                 <div className="postDetails">
-                    <div>
-                        <i class="fa-regular fa-calendar"></i>
-                        <p>{startDay} - {endDay}</p>
+                    <div>          
+                        <p><i class="fa-regular fa-calendar"></i> {startDay} - {endDay}</p>
+                        <p>Pay {payAmount}</p>
                     </div>
-                    <p>Pay {payAmount}</p>
-                    <p>{intersection}</p>
-                    <p>{tasks}</p>
-                </div>
+                    <p><i class="fa-solid fa-map-pin"></i> {intersection}</p>
+                    <p><i class="fa-regular fa-square-check"></i> {tasks}</p>
+                </div><br/>
+                <input className="postInquiry" placeholder="Is this still available?"></input>
             </div>
 
         </>

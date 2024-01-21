@@ -153,9 +153,14 @@ html, body {
   margin: 0;
 }
 
+.postDetails {
+  margin: 2px;
+
+}
+
 .postDetails p {
   font-size: 10px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .postDetails div:first-child {
@@ -170,4 +175,18 @@ html, body {
 .postDetails .first-two {
   display: flex;
   justify-content: space-between;
+}
+
+.postInquiry {
+  display: block;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px sold #ccc
+}
+
+.postInquiry::placeholder {
+  color: grey;
 }
