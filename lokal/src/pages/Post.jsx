@@ -11,7 +11,10 @@ const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payA
                     <p>{location} | {daysAgo} days ago</p>
                 </div>
                 <div className="postDetails">
-                    <p>{startDay} - {endDay}</p>
+                    <div>
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>{startDay} - {endDay}</p>
+                    </div>
                     <p>Pay {payAmount}</p>
                     <p>{intersection}</p>
                     <p>{tasks}</p>
