@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import loginService from '../services/login'
-import '../../login.css'
 
 const Login = () => {
   const [username, setUsername] = useState('')
@@ -31,21 +30,19 @@ const Login = () => {
 
     return (
       <>
-        <div className="login-wrapper">
-          <h2>Log in</h2>
-          <form onSubmit={handleLogin} className="login-inputs">
-            <div>
-              username
-              <input type="text" value={username} name="Username" onChange={({ target }) => setUsername(target.value)} />
+        <div className="loginPage">
+          <h1 className="loginTitle">LOKAL</h1>
+          <form onSubmit={handleLogin}>
+            <div className="loginFields">
+              <input type="text" value={username} placeholder="Username" name="Username" onChange={({ target }) => setUsername(target.value)} />
+              <input type="password" value={password} placeholder="Password" name="Password" onChange={({ target }) => setPassword(target.value)} />
+              <button type="submit">Sign In</button>
             </div>
-            <div>
-              password
-              <input type="password" value={password} name="Password" onChange={({ target }) => setPassword(target.value)} />
-            </div>
-            <button type="submit">login</button>
+            
             <a id='home' href='/home'></a>
           </form>
         </div>
+
       </>
     );
   };
