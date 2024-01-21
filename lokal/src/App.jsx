@@ -4,6 +4,9 @@ import Home from "./pages/Home"
 import Inbox from "./pages/Inbox"
 import Add from "./pages/Add"
 import Listings from "./pages/Listings"
+import Listings2 from "./pages/Listings2"
+import Listings3 from "./pages/Listings3"
+import Listings4 from "./pages/Listings4"
 import Profile from "./pages/Profile"
 
 function App() {
@@ -25,6 +28,15 @@ function App() {
     case "/listings":
       component = <Listings />
       break
+    case "/listings2":
+      component = <Listings2 />
+      break 
+    case "/listings3":
+      component = <Listings3 />
+      break
+    case "/listings4":
+      component = <Listings4 />
+      break 
     case "/profile":
       component = <Profile />
       break

@@ -16,7 +16,7 @@ export default function Listings() {
                 <div></div>
                 <div></div>
             </div>
-            <button>save & exit</button> <button id='next'>{tasks}</button>
+            <a href="/">save & exit</a> <a href="/listings2">2. Add Tasks</a>
             <Navbar />
         </div>
     )
