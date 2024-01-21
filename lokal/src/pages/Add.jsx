@@ -1,3 +1,11 @@
+import Calendar from "../components/Calendar";
+import Navbar from "../Navbar"
+
 export default function Add() {
-    return <h1>Add</h1>
+    return (
+        <div>
+            <Calendar />
+            <Navbar />
+        </div>
+    )
 }

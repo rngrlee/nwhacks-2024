@@ -1,4 +1,5 @@
 import Post from "./Post"
+import Navbar from "../Navbar"
 import postService from '../services/posts'
 import { useState, useEffect } from "react"
 
@@ -32,6 +33,7 @@ const Home = () => {
                 intersection={post.intersection} 
                 tasks={post.tasks} />
             )}
+            <Navbar />
         </>
     )
 }

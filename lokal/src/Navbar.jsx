@@ -3,7 +3,10 @@ export default function Navbar() {
         <nav className="nav">
             <ul>
                 <li>
-                    <a href="/"><i className="fa-solid fa-house fa-2x"></i>Home</a>
+                    <a href="/home">
+                        <i className="fa-solid fa-house fa-2x"></i>
+                        Home
+                    </a>
                 </li>
                 <li>
                     <a href="/inbox"><i className="fa-regular fa-message fa-2x"></i>Inbox</a>

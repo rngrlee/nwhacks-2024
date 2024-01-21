@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-
 import loginService from './services/login'
+
 import Profile from './components/Profile'
+
 import LoginForm from './components/LoginForm';
 import FooterMenu from "./components/Footer";
 
@@ -9,7 +10,6 @@ function App() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [user, setUser] = useState(null)
-  const [errorMessage, setErrorMessage] = useState('')
 
   const handleLogin = async (event) => {
     event.preventDefault()
@@ -38,23 +38,6 @@ function App() {
       }, 5000)
     }
   }
-
-  const loginForm = () => (
-    <>
-    <h2>Log in</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          username
-          <input type="text" value={username} name="Username" onChange={({ target }) => setUsername(target.value)} />
-        </div>
-        <div>
-          password
-          <input type="password" value={password} name="Password" onChange={({ target }) => setPassword(target.value)} />
-        </div>
-        <button type="submit">login</button>
-      </form>
-    </>      
-  )
 
   return (
     <>

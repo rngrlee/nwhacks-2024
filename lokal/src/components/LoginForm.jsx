@@ -1,6 +1,3 @@
-import './css/Styles.css';
-import './css/LoginForm.css';
-
 const LoginForm = ({ username, setUsername, password, setPassword, handleLogin }) => {
   return (
     <>

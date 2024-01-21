@@ -1,5 +1,6 @@
 import './Styles.css';
 import './Profile.css';
+import Navbar from "../Navbar"
 
 const Profile = ({ picture, name, star }) => {
 
@@ -29,6 +30,7 @@ const Profile = ({ picture, name, star }) => {
             <h3>Legal</h3>
             <button className='bottom-buttons'><i class="fa-solid fa-book-open"></i> Terms of Service</button> <br />
             <button className='bottom-buttons'><i class="fa-solid fa-book-open"></i> Privacy Policy </button> <br />
+            <Navbar />
         </>
     )
 }
