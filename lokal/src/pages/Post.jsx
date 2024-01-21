@@ -3,7 +3,10 @@ const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payA
         <>
             <div className="singlePost">
                 <div className="postHeader">
-                    <p>{postUser}</p>
+                    <div className="userInfo">
+                        <img src='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' alt="Profile" className="small-profile-image" />
+                        <p>{postUser}</p>
+                    </div>
                     <p>★ 4.5/5</p>
                 </div>
                 <div className="postTitles">
@@ -20,7 +23,6 @@ const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payA
                 </div><br/>
                 <input className="postInquiry" placeholder="Is this still available?"></input>
             </div>
-
         </>
     )
 }

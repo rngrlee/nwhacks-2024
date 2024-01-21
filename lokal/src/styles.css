@@ -132,13 +132,29 @@ html, body {
   align-items: center;
 }
 
-  .postHeader p:first-child {
-    font-weight: bold;
-  }
+.singlePost .userInfo {
+  display: flex;
+  align-items: center;
+}
 
-  .postHeader p:last-child {
-    color: #FF9900;
-  }
+.small-profile-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.userInfo p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.postHeader > p {
+  margin: 0;
+  padding: 0;
+  color: orange;
+}
 
 .postTitles {
   display: flex;
@@ -167,6 +183,8 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
+
+
 
 .postDetails p:last-child {
   margin-bottom: 0;

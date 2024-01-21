@@ -1,39 +1,17 @@
-import React, { useEffect, useState } from 'react';
 import Navbar from "../Navbar"
-import messageService from '../services/messages'
 
-function Inbox() {
+export default function Add() {
 
-    const [messages, setMessages] = useState([])
-
-    const getMessages = async () => {
-        const returnedMessages = await messageService.getAll()
-        setMessages(returnedMessages)
-    }
-
-    useEffect(() => {
-        getMessages()
-    }, [])
-    
     return (
-        <>
-            <div>
-                <h1 className="title">Inbox</h1>
-                {
-                    messages.map( record => {
-                        return(
-                            <div className="box">
-                                <h4>{ record.sender }</h4>
-                                <p>{ record.content }</p>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+        <div>
+            <h1 className="title">Inbox (1)</h1>
+            <ul class="chats">
+                <li>
+                    <img src='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' alt="Profile" className="profile-image" />
+                    <a href="/chat">Ranger Lee</a>
+                </li>
+            </ul>
             <Navbar />
-        </>
-
-    );
+        </div>
+    )
 }
-
-export default Inbox;

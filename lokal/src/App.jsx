@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Login from "./pages/Login"
 import Home from "./pages/Home"
 import Inbox from "./pages/Inbox"
+import Chat from "./pages/Chat"
 import Add from "./pages/Add"
 import Listings2 from "./pages/Listings2"
 import Listings3 from "./pages/Listings3"
@@ -20,6 +21,9 @@ function App() {
       break
     case "/inbox":
       component = <Inbox />
+      break
+    case "/chat":
+      component = <Chat />
       break
     case "/add":
       component = <Add />
