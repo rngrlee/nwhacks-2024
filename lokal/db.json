@@ -16,5 +16,31 @@
         "username": "fiona",
         "password": "chang"
     }
+  ],
+  "post": [
+    {
+      "title": "Sample Post Title 1",
+      "location": "Sample Location 1",
+      "daysAgo": 2,
+      "postUser": "user1",
+      "type": "Full-Time",
+      "startDay": "2023-04-01",
+      "endDay": "2023-04-30",
+      "payAmount": 3000,
+      "intersection": "Sample Intersection 1",
+      "tasks": "Sample Task 1, Sample Task 2"
+    },
+    {
+      "title": "Sample Post Title 2",
+      "location": "Sample Location 2",
+      "daysAgo": 5,
+      "postUser": "user2",
+      "type": "Part-Time",
+      "startDay": "2023-05-01",
+      "endDay": "2023-05-15",
+      "payAmount": 1500,
+      "intersection": "Sample Intersection 2",
+      "tasks": "Sample Task 3, Sample Task 4"
+    }
   ]
 }
