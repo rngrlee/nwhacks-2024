@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import postService from './services/posts'
 import loginService from './services/login'
 import Profile from './components/Profile'
-
+import Post from './components/Post'
 import { NewTodoForm } from "./components/NewTodoForm"
 import { TodoList } from "./components/TodoList"
 
@@ -97,6 +97,12 @@ function App() {
       </form>
     </>      
   )
+
+  if (user === null) {
+    return (
+      loginForm()
+    )
+  }
 
 
 

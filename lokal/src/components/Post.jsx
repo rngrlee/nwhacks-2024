@@ -1,12 +1,12 @@
-const Post = ({ type, stayLength, area, pay, tasks, description }) => {
+const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payAmount, intersection, tasks }) => {
     return (
         <>
-            {type}
-            {stayLength}
-            {area}
-            {pay}
+            {title}
+            {location} | {daysAgo} days ago | 
+            <b>{postUser}</b> Posted a {type} listing
+            {startDay} to {endDay} Pay {payAmount}
+            {intersection}
             {tasks}
-            {description}
         </>
     )
 }

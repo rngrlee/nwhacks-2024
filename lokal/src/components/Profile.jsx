@@ -1,10 +1,15 @@
-const Profile = ({ picture, name }) => {
+const Profile = ({ picture, name, rating }) => {
 
     return (
         <>
             <h1>Profile</h1>
             <img src={picture} alt="" />
             <h3>{name}</h3>
+            <button>Change Photo</button>
+            <p>★{rating}/5</p>
+            <button>Get Help</button>
+            <button>Reviews</button>
+            <button>Activity</button>
             <h2>Settings</h2>
             <button>Personal Information</button> <br />
             <button>Login & Security</button> <br />
