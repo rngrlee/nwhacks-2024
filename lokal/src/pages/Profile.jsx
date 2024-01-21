@@ -1,5 +1,5 @@
-import './css/Styles.css';
-import './css/Profile.css';
+import './Styles.css';
+import './Profile.css';
 
 const Profile = ({ picture, name, star }) => {
 
