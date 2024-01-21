@@ -10,6 +10,12 @@ const Profile = ({ picture, name }) => {
                 <img src={picture} alt="Profile" className="profile-image" />
                 <h4 className="profile-name">{name}</h4>
             </div>
+
+            <br></br>
+            <button>Get Help</button>
+            <button>Reviews</button>
+            <button>Activity</button>
+
             <h2>Settings</h2>
             <button>Personal Information</button> <br />
             <button>Login & Security</button> <br />
