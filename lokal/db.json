@@ -42,5 +42,17 @@
       "intersection": "Sample Intersection 2",
       "tasks": "Sample Task 3, Sample Task 4"
     }
+  ],
+  "messages": [
+    {
+        "id": 1,
+        "sender": "Ranger Lee",
+        "content": "Reply: Are you still looking for a caretaker? I have a couple plants of my own and can be available in your requested time frame :)"
+    },
+    {
+        "id": 2,
+        "sender": "Daniel Yoo",
+        "content": "Reply: Hi Ranger, yes I am still looking. Can you give me a quick call at 604-333-7874 sometime tomorrow?"
+    }
   ]
 }  
