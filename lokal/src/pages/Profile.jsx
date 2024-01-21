@@ -1,5 +1,3 @@
-// import './Styles.css';
-// import './Profile.css';
 import Navbar from "../Navbar"
 
 
