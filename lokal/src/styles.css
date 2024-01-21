@@ -7,17 +7,19 @@ body {
 }
 
 .nav {
-    background-color: #333;
-    color: white;
+    background-color: #f2f2f2;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
-.site-title {
-    font-size: 2rem;
+    /* gap: 2rem; */
+    padding: 10px 0;
 }
 
 .nav ul {
@@ -42,5 +44,5 @@ body {
 }
 
 .nav li:hover {
-    background-color: #777;
+    background-color: #eaeaea;
 }
