@@ -67,7 +67,7 @@ function App() {
             setPassword={setPassword}
             handleLogin={handleLogin}
           />
-        : <Profile picture='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' name="Daniel"/>
+        : <Profile picture='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' name="LeBron James"/>
       }
       </div>
       <div>

@@ -16,19 +16,19 @@ const Profile = ({ picture, name, star }) => {
             </div>
 
             <br></br>
-            <button className='top-buttons'>Get Help</button>
-            <button className='top-buttons'>Reviews</button>
-            <button className='top-buttons'>Activity</button>
+            <button className='top-buttons'><i class="fa fa-question-circle-o fa-2x"></i><br />Get Help</button>
+            <button className='top-buttons'><i class="fa fa-star fa-2x"></i><br />Reviews</button>
+            <button className='top-buttons'><i class="fa fa-newspaper fa-2x"></i><br />Activity</button>
 
-            <h2>Settings</h2>
-            <button>Personal Information</button> <br />
-            <button>Login & Security</button> <br />
-            <button>Accessiblity</button> <br />
-            <button>Notifications</button> <br />
-            <button>Privacy & Sharing</button> <br />
-            <h2>Legal</h2>
-            <button>Terms of Service</button> <br />
-            <button>Privacy Policy</button> <br />
+            <h3>Settings</h3>
+            <button className='bottom-buttons'><i class="fa fa-user"></i> Personal Information</button> <br />
+            <button className='bottom-buttons'><i class="fa-solid fa-shield"></i> Login & Security</button> <br />
+            <button className='bottom-buttons'><i class="fa-solid fa-gear"></i> Accessiblity</button> <br />
+            <button className='bottom-buttons'><i class="fa-solid fa-bell"></i> Notifications</button> <br />
+            <button className='bottom-buttons'><i class="fa-solid fa-lock"></i> Privacy & Sharing</button> <br />
+            <h3>Legal</h3>
+            <button className='bottom-buttons'><i class="fa-solid fa-book-open"></i> Terms of Service</button> <br />
+            <button className='bottom-buttons'><i class="fa-solid fa-book-open"></i> Privacy Policy </button> <br />
         </>
     )
 }

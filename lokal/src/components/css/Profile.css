@@ -21,10 +21,12 @@
 .title{
     font-family: Arial, sans-serif;
     color: #FF9900;
+    position: relative;
+    margin-top: -50px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: Arial, sans-serif;
+* {
+  font-family: 'Inter', sans-serif;
 }
 
 .top-buttons {
@@ -32,6 +34,9 @@ h1, h2, h3, h4, h5, h6, p {
   height: 70px;
   margin: 0px 10px 0px 10px;
   border-radius: 10px;
+  background-color: #fee0c3;
+  outline: none;
+  border: none;
 }
 
 .horizontal-child {
@@ -49,4 +54,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0px 0px 0px 0px;
   padding-left: 0px;
   color: grey;
+}
+
+.bottom-buttons {
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  margin: 3px 0px 3px 0px;
 }
