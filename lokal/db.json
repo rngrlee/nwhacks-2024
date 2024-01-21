@@ -1,8 +1,20 @@
 {
-    "data": [
-      {
-        "example": "test data",
-        "id": "12345"
-      }
-    ]
+  "data": [
+    {
+      "example": "test data",
+      "id": "12345"
+    }
+  ],
+  "login": [
+    {
+      "id": "f329",
+      "username": "username",
+      "password": "password"
+    },
+    {
+        "id": "21382",
+        "username": "fiona",
+        "password": "chang"
+    }
+  ]
 }
