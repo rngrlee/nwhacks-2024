@@ -5,6 +5,7 @@
 }
 
 html, body {
+    background-color: ivory;
     height: 100%;
     margin: 0;
   }
@@ -114,4 +115,59 @@ html, body {
   border: none;
   background-color: #FFFFFF;
   margin: 3px 0px 3px 0px;
+}
+
+/*For Post.jsx*/
+.singlePost {
+  margin: 10px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .postHeader p:first-child {
+    font-weight: bold;
+  }
+
+  .postHeader p:last-child {
+    color: #FF9900;
+  }
+
+.postTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.postTitles h2,
+.postTitles p {
+  margin: 0;
+}
+
+.postDetails p {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.postDetails div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postDetails p:last-child {
+  margin-bottom: 0;
+}
+
+.postDetails .first-two {
+  display: flex;
+  justify-content: space-between;
 }

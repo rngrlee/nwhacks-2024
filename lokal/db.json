@@ -18,8 +18,8 @@
       "daysAgo": 2,
       "postUser": "Jenny Zhang",
       "type": "Full-Time",
-      "startDay": "2023-08-04",
-      "endDay": "2023-08-21",
+      "startDay": "Aug 4, 2023",
+      "endDay": "Aug 21, 2023",
       "payAmount": 500,
       "intersection": "Agronomy Rd & 16th Ave",
       "tasks": "Water plants, collect mail, adjust blinds..."
@@ -30,8 +30,8 @@
       "daysAgo": 4,
       "postUser": "Fiona Chang",
       "type": "Part-Time",
-      "startDay": "2023-07-02",
-      "endDay": "-",
+      "startDay": "July 2, 2023",
+      "endDay": "",
       "payAmount": 40,
       "intersection": "Agronomy Rd & 16th Ave",
       "tasks": "Feed pet, clean litter box, brush pet..."
