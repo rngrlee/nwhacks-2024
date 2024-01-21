@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './css/Styles';
 
 export function NewTodoForm({ onSubmit }) {
   const [newItem, setNewItem] = useState("")

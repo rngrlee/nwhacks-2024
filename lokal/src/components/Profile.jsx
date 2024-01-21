@@ -19,10 +19,6 @@ const Profile = ({ picture, name }) => {
             <h2>Legal</h2>
             <button>Terms of Service</button> <br />
             <button>Privacy Policy</button> <br />
-
-            {/* <NewTodoForm onSubmit={addTodo} />
-            <h1 className="header">Todo List</h1>
-            <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} /> */}
         </>
     )
 }
