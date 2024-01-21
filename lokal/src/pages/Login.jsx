@@ -19,19 +19,12 @@ const Login = () => {
       const equalPos = usernames.indexOf(username) === passwords.indexOf(password)
 
       if (usernames.includes(username) && passwords.includes(password) && equalPos) {
-        window.localStorage.setItem(
-          'loggedAppUser', JSON.stringify(user)
-        )
         setUser(user)
         setUsername('')
         setPassword('')
-        // <a href="/home" />
+        document.getElementById('home').click()
         }
     } catch (exception) {
-      setErrorMessage('Wrong credentials')
-      setTimeout(() => {
-        setErrorMessage(null)
-      }, 5000)
     }
   }
 
@@ -48,6 +41,7 @@ const Login = () => {
             <input type="password" value={password} name="Password" onChange={({ target }) => setPassword(target.value)} />
           </div>
           <button type="submit">login</button>
+          <a id='home' href='/home'></a>
         </form>
       </>
     );
