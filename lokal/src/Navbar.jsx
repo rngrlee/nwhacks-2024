@@ -15,9 +15,6 @@ export default function Navbar() {
                     <a href="/add"><i className="fa-regular fa-square-plus fa-2x"></i>Add</a>
                 </li>
                 <li>
-                    <a href="/listings"><i className="fa-regular fa-rectangle-list fa-2x"></i>Listings</a>
-                </li>
-                <li>
                     <a href="/profile"><i className="fa-regular fa-user fa-2x"></i>Profile</a>
                 </li>
             </ul>
