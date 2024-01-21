@@ -1,5 +1,6 @@
 import Post from "./Post"
 import postService from '../services/posts'
+import { useState, useEffect } from "react"
 
 const Timeline = () => {
 
@@ -8,13 +9,16 @@ const Timeline = () => {
     const getPosts = async () => {
         const postsReturned = await postService.getAll()
         setPosts(postsReturned)
+        console.log(postsReturned, 'returned')
     }
 
-    getPosts()
+    useEffect(() => {
+        getPosts()
+    }, [])
 
     return (
         <>
-            {posts.map(post => {
+            {posts.map(post => 
                 <Post 
                 key={post.id} 
                 title={post.title} 
@@ -27,9 +31,9 @@ const Timeline = () => {
                 payAmount={post.payAmount} 
                 intersection={post.intersection} 
                 tasks={post.tasks} />
-            })}
+            )}
         </>
     )
 }
 
-export default Profile
+export default Timeline
