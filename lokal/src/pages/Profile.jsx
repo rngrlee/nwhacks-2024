@@ -2,7 +2,8 @@
 // import './Profile.css';
 import Navbar from "../Navbar"
 
-const Profile = ({ name, star }) => {
+
+const Profile = () => {
 
     return (
         <>
@@ -10,9 +11,9 @@ const Profile = ({ name, star }) => {
             <div className="horizontal-align">
                 <img src='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' alt="Profile" className="profile-image" />
                 <div className='horizontal-child'>
-                    <h4 className="profile-name">{name}</h4>
+                    <h4 className="profile-name">Fiona Chang</h4>
                     <button className='change-photo'>Change Photo</button> <br />
-                    ★ {star}/5
+                    ★ 4.5/5
                 </div>
             </div>
 

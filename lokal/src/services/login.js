@@ -6,4 +6,9 @@ const login = async ({ username, password }) => {
   return response.data
 }
 
-export default { login }
+const getAll = async () => {
+  const response = await axios.get(baseUrl)
+  return response.data
+}
+
+export default { login, getAll }
