@@ -1,0 +1,28 @@
+.profile-image {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.horizontal-align {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    /* Add any specific styles for your image here */
+    /* For example, you might want to add some margin to separate it from the header */
+    margin-right: 10px;
+  }  
+
+.title{
+    font-family: Arial, sans-serif;
+    color: #FF9900;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, sans-serif;
+}
+

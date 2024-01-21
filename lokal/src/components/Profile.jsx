@@ -1,15 +1,15 @@
-const Profile = ({ picture, name, rating }) => {
+import './css/Styles.css';
+import './css/Profile.css';
+
+const Profile = ({ picture, name }) => {
 
     return (
         <>
-            <h1>Profile</h1>
-            <img src={picture} alt="" />
-            <h3>{name}</h3>
-            <button>Change Photo</button>
-            <p>★{rating}/5</p>
-            <button>Get Help</button>
-            <button>Reviews</button>
-            <button>Activity</button>
+            <h1 className="title">Profile</h1>
+            <div class="horizontal-align">
+                <img src={picture} alt="Profile" className="profile-image" />
+                <h4 className="profile-name">{name}</h4>
+            </div>
             <h2>Settings</h2>
             <button>Personal Information</button> <br />
             <button>Login & Security</button> <br />
@@ -19,6 +19,10 @@ const Profile = ({ picture, name, rating }) => {
             <h2>Legal</h2>
             <button>Terms of Service</button> <br />
             <button>Privacy Policy</button> <br />
+
+            {/* <NewTodoForm onSubmit={addTodo} />
+            <h1 className="header">Todo List</h1>
+            <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} /> */}
         </>
     )
 }

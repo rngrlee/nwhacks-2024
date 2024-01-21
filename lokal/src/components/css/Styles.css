@@ -1,0 +1,20 @@
+/* This assumes that the <div> is a direct child of the body element */
+html, body {
+    height: 100%; /* Make sure the parent has a defined height */
+    margin: 0; /* Reset default margin */
+  }
+  
+  body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .container { /* Give your div a class name */
+    display: flex;
+    align-items: center; /* This will align the image and h3 horizontally */
+  }
+  
+  .profile-image {
+    margin-right: 10%px; /* Optional space between the image and the text */
+  }

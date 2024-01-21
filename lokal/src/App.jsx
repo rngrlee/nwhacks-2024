@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react"
 
-import postService from './services/posts'
 import loginService from './services/login'
 import Profile from './components/Profile'
-import Post from './components/Post'
-import { NewTodoForm } from "./components/NewTodoForm"
-import { TodoList } from "./components/TodoList"
+import LoginForm from './components/LoginForm';
 
 function App() {
   const [username, setUsername] = useState('')
@@ -52,7 +49,6 @@ function App() {
     })
   }
 
-
   const handleLogin = async (event) => {
     event.preventDefault()
 
@@ -98,25 +94,21 @@ function App() {
     </>      
   )
 
-  if (user === null) {
-    return (
-      loginForm()
-    )
-  }
-
 
 
   return (
     <>
       <div>
       {user === null
-        ? loginForm()
-        : <Profile picture='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg'/>
+        ? <LoginForm
+            username={username}
+            setUsername={setUsername}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+          />
+        : <Profile picture='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' name="Daniel"/>
       }
-      <br></br>
-      <NewTodoForm onSubmit={addTodo} />
-      <h1 className="header">Todo List</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       </div>
     </>
   )
