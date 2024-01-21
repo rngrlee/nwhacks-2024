@@ -33,7 +33,7 @@
 }
 
 .time-1 {
-    margin-top: 480px;
+    margin-top: 400px;
 }
 
 .time {
@@ -48,6 +48,7 @@
     padding-left: 5px;
     padding-right: 5px;
     justify-content: end;
+    margin-top: 20px;
 }
 
 .message-input {

@@ -19,8 +19,9 @@ const Home = () => {
 
     return (
         <>
-            <div title="component">
-                <h1 className="title">Home</h1>
+            <h1 className="title">Home</h1>
+            <div className="component">
+                
                 {posts.map(post => 
                     <Post 
                     key={post.id} 
