@@ -18,7 +18,7 @@ function Inbox() {
     return (
         <>
             <div>
-                <h1>Inbox</h1>
+                <h1 className="title">Inbox</h1>
                 {
                     messages.map( record => {
                         return(

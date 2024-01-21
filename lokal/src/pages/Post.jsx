@@ -1,12 +1,21 @@
 const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payAmount, intersection, tasks }) => {
     return (
         <>
-            <div>{title}</div>
-            <div>{location} | {daysAgo} days ago</div>
-             <div><b>{postUser}</b> Posted a {type} listing</div>
-            <div>{startDay} to {endDay} Pay {payAmount}</div>
-            <div>{intersection}</div>
-            <div>{tasks}</div>
+            <div>
+                <div>
+                    <p>{postUser}</p>
+                    ★ {star}/5
+                </div>
+                <div>
+                    <h2>{title}</h2>
+                    <p>{location} | {daysAgo} days ago</p>
+                </div>
+                
+                <p>{startDay} to {endDay} Pay {payAmount}</p>
+                <p>{intersection}</p>
+                <p>{tasks}</p>
+            </div>
+
         </>
     )
 }
