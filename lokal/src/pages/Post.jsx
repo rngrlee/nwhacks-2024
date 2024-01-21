@@ -4,7 +4,7 @@ const Post = ({ title, location, daysAgo, postUser, type, startDay, endDay, payA
             <div>
                 <div>
                     <p>{postUser}</p>
-                    ★ {star}/5
+                    ★ 4.5/5
                 </div>
                 <div>
                     <h2>{title}</h2>
