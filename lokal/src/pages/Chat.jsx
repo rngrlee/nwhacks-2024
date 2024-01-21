@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from "../Navbar"
 import messageService from '../services/messages'
+import '../../chat.css'
 
 function Chat() {
 
@@ -19,16 +20,17 @@ function Chat() {
         <>
             <div>
                 <h1 className="title">Chat</h1>
-                {
-                    messages.map( record => {
-                        return(
-                            <div className="box">
-                                <h4>{ record.sender }</h4>
-                                <p>{ record.content }</p>
-                            </div>
-                        )
-                    })
-                }
+                <div className='time'>{messages[0].time}</div>
+                <div className='first-msg'>
+                    {messages[0].content.slice(7)}
+                </div>
+                <div className='time'>{messages[1].time}</div>
+                <div className='second-msg'>
+                    {messages[1].content.slice(7)}
+                </div>
+                <div className='message-bar'>
+                    <input className='message-input'type="text" placeholder='   Message...' />
+                </div>
             </div>
             <Navbar />
         </>

@@ -1,0 +1,11 @@
+.login-wrapper {
+    background-color: orange !important;
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+
+.login-inputs {
+    position: relative;
+    justify-content: right;
+    align-items: right;
+}

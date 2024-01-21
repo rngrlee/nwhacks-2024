@@ -1,0 +1,41 @@
+.first-msg {
+    display: flex;
+    background-color: grey;
+    margin: 0px 20px 10px 20px;
+    border-radius: 12px;
+    padding: 5px;
+    color: whitesmoke;
+    width: 70vw;
+    justify-content: flex-start;
+
+}
+
+.second-msg {
+    background-color: orange;
+    margin: 0px 20px 10px 20px;
+    border-radius: 12px;
+    padding: 5px;
+    color: whitesmoke;
+    width: 70vw;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px
+}
+
+.message-bar {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.message-input {
+    display: flex;
+    width: 72vw;
+    border: none;
+    justify-content: center;
+    margin-left: 5px;
+}
