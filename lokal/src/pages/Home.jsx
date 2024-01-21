@@ -19,21 +19,23 @@ const Home = () => {
 
     return (
         <>
-            <h1 className="title">Home</h1>
-            {posts.map(post => 
-                <Post 
-                key={post.id} 
-                title={post.title} 
-                location={post.location} 
-                daysAgo={post.daysAgo} 
-                postUser={post.postUser} 
-                type={post.type} 
-                startDay={post.startDay} 
-                endDay={post.endDay}
-                payAmount={post.payAmount} 
-                intersection={post.intersection} 
-                tasks={post.tasks} />
-            )}
+            <div title="component">
+                <h1 className="title">Home</h1>
+                {posts.map(post => 
+                    <Post 
+                    key={post.id} 
+                    title={post.title} 
+                    location={post.location} 
+                    daysAgo={post.daysAgo} 
+                    postUser={post.postUser} 
+                    type={post.type} 
+                    startDay={post.startDay} 
+                    endDay={post.endDay}
+                    payAmount={post.payAmount} 
+                    intersection={post.intersection} 
+                    tasks={post.tasks} />
+                )}
+            </div>
             <Navbar />
         </>
     )
