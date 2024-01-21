@@ -2,6 +2,7 @@ import Navbar from "../Navbar"
 import Calendar from "../components/Calendar"
 
 export default function Listings() {
+
     return (
         <div>
             <h1>What are you looking for?</h1>
@@ -15,7 +16,7 @@ export default function Listings() {
                 <div></div>
                 <div></div>
             </div>
-            <button>save & exit</button> <button>2. Add Tasks</button>
+            <button>save & exit</button> <button id='next'>{tasks}</button>
             <Navbar />
         </div>
     )
