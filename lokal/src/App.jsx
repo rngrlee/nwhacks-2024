@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import loginService from './services/login'
 import Profile from './components/Profile'
 import LoginForm from './components/LoginForm';
+import FooterMenu from "./components/Footer";
 
 function App() {
   const [username, setUsername] = useState('')
@@ -116,6 +117,9 @@ function App() {
           />
         : <Profile picture='https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg' name="Daniel"/>
       }
+      </div>
+      <div>
+        <FooterMenu />
       </div>
     </>
   )
