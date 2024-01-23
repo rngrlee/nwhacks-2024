@@ -11,7 +11,7 @@ export default function Add() {
                     <div className="chat-item">
                         <img src="https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0067.jpg" alt="Profile 1" class="profile-image"></img>
                         <h4>Ranger Lee</h4>
-                        <p>asdkjhaskdjhaskjdashkjahkjda</p>
+                        <p>Reply: Hi Ranger, yes I am...</p>
                     </div>
                 </a>
             </div>
